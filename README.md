@@ -10,7 +10,6 @@
 
 ## Requirements
 
-* You make at least 3 commits in git
 * Your project is hosted on GitHub Pages
 * Users have the ability to add new to-do items
 * Users have the ability to view to-do items
