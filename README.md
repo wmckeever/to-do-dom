@@ -10,7 +10,6 @@
 
 ## Requirements
 
-* Your project is hosted on GitHub Pages
 * Users have the ability to add new to-do items
 * Users have the ability to view to-do items
 * Allow users to clear all to-do items
