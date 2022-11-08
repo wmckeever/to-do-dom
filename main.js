@@ -13,44 +13,42 @@ let input = document.querySelector('#listItem');
 //*<------------------------------------------->*//
 
 
-
 //*<------------- Add Item ------------->*//
 addButton.addEventListener('click', function(event){
   event.preventDefault();
   console.log("Add Item Button Works")
   
   let listItem = document.createElement("li");
+
+//*<------------- Mark Items As Complete ------------->*//
+listItem.addEventListener('click', function(){
+
+  if(listItem.style.textDecoration === "line-through"){
+    listItem.style.textDecoration = "";
+    listItem.innerText = input.value;
+      }else if(listItem.style.textDecoration === ""){
+    listItem.style.textDecoration = "line-through"
+    listItem.innerText = input.value + " - completed";
+   
+
+  }
+  });
+
   listItem.innerText = input.value;
   orderedList.appendChild(listItem);
-  //listItem = true;
-})
+  
+});
+
 
 //*<------------- Remove All Items ------------->*//
 
-removeAll.addEventListener('click', function(){
-  orderedList.removeAll("li")
-})
-
-
-
-
-//*<------------- Mark Items As Complete ------------->*/
-
-  for (let i = 0; i < orderedList.length; i++) {
-        console.log(orderedList);
-  orderedList[i].classList.addEventListener('click', function(){
-        orderedList[i].style.textDecoration = "line-through";
-  } )
-      
+removeAll.addEventListener('click', function(event){
+  event.preventDefault();
+  let removeItems = document.querySelectorAll('ol li');
+    for (let i = 0; i < removeItems.length; i++) {
+        olItem1.removeChild(removeItems[i]);
+    }
   
-};
-
-completedTasks();
-  
-  //items.style.textDecoration = "line-through";
-
-
-
-
+});
 
 //*<------------- Stretch Goals ------------->*//
