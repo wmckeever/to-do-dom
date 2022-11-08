@@ -1,0 +1,10 @@
+#header{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+}
+
+#listBox{
+  border: 1px dashed grey;
+}
