@@ -51,4 +51,3 @@ removeAll.addEventListener('click', function(event){
   
 });
 
-//*<------------- Stretch Goals ------------->*//

@@ -8,3 +8,17 @@
 #listBox{
   border: 1px dashed grey;
 }
+#addButton {
+  background-color: lightgreen;
+  color: red
+}
+
+#removeCompletedButton{
+  background-color: yellow;
+  color: red;
+}
+
+#removeAllButton{
+  background-color: red;
+  color: yellow;
+}
