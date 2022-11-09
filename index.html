@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
   <link href="styles.css" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -15,11 +18,13 @@
 <div>
     <form id="todoMain">
   
-  <p>Enter an item below to add items to your list:<p>
+  <h3>Enter an item below to add items to your list:</h3>
 <input type="text" id="listItem" placeholder="enter a new item">
+<br>
+<br>
 
 
-
+<label id=" taskName">Your Current Tasks</label>
 <div id="listBox">
 <ol id="itemList">
 
@@ -35,37 +40,13 @@
 <input type="submit" id="removeCompletedButton" value="REMOVE COMPLETED TASKS">
 <input type="submit" id ="removeAllButton" value="REMOVE ALL TASKS">
 </div>
-  </form>
+ 
+
+</form>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<div id="tasksRemaining"></div>
 
   <script src="main.js"></script>  
 </body>

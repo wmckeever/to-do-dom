@@ -1,24 +1,96 @@
 #header{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color: cadetblue;
-  color: white;
+  font-family: 'Courier Prime', monospace;
+ 
+  color: black;
   text-align: center;
+  
+  border-right: solid 3px black;
+
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: 
+    type 2s steps(16) 1s forwards, 
+    blink 0.5s steps(1) infinite;
 }
 
-#listBox{
-  border: 1px dashed grey;
+body {
+  background-color: beige;
 }
+
+h3 {
+  width: 375px;
+  color: black;
+ 
+}
+
+#todoMain {
+  width: 390px;
+  padding: 20px;
+  border: 2px solid grey;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+#listBox {
+  width: 380px;
+  color: white;
+  background-color: lightslategray;
+  border: 2px dashed grey;
+  flex-grow: 5;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .1);
+  font-family: 'Courier Prime', monospace;
+}
+
+#listItem {
+width: 375px
+}
+
+#buttons{
+  align-items: center;
+  flex-direction: column;
+}
+
 #addButton {
-  background-color: lightgreen;
-  color: red
+  border-radius: 5px;
+  background-color: green;
+  color: yellow;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
+
 }
 
 #removeCompletedButton{
+  border-radius: 5px;
   background-color: yellow;
   color: red;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
+
 }
 
 #removeAllButton{
+  border-radius: 5px;
   background-color: red;
   color: yellow;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
+
+}
+
+@keyframes type {
+  to { width: 38ch}
+}
+@keyframes blink{
+  from {border-color: transparent;}
+  50% {border-color: black;}
+  to {border-color: transparent;}
+}
+
+#tasksRemaining{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
