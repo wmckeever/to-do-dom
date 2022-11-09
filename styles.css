@@ -88,6 +88,7 @@ width: 375px
 }
 
 #tasksRemaining{
+  align=: ;
   width: 150px;
   height: 150px;
   margin: 10px;

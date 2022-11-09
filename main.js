@@ -66,7 +66,11 @@ removeAll.addEventListener('click', (e)=>{
 });
 
 //*<------------- Display Total ------------->*//
-for (let i = 0; i < orderedList.length; i++) {
-  console.log(orderedList.length);
+let itemCount = querySelectorAll('ol li');
+let totalCount = querySelector('#totalCount');
+
+for (let i = 0; i < itemCount.length; i++) {
+
+ totalCount.innerText = itemCount.length;
   
 }
