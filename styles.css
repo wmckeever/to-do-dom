@@ -17,6 +17,7 @@
 
 body {
   background-color: beige;
+  flex: auto;
 }
 
 h3 {
@@ -88,10 +89,17 @@ width: 375px
 }
 
 #tasksRemaining{
-  align=: ;
   width: 150px;
   height: 150px;
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
+}
+
+#totalCount {
+  font-size: 65px;
+  text-align: center;
+  vertical-align: middle;
+  color: lightslategray;
+
 }
