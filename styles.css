@@ -25,16 +25,18 @@ h3 {
   color: black;
  
 }
+#mainContainer{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
 
+}
 #todoMain {
   width: 390px;
   padding: 20px;
   border: 2px solid grey;
-  align-content: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-}
+ }
 
 #listBox {
   width: 380px;
